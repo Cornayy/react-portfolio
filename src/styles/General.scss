@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+$app-font: 'Nunito', sans-serif;
+$font-size: 22px;
+
+* {
+    font-family: $app-font;
+}
+
+p {
+    font-size: $font-size;
+}
+
+a {
+    font-size: $font-size;
+}

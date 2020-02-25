@@ -1,0 +1,42 @@
+.navbar {
+    padding: 29px;
+    font-size: 20px;
+    background-color: #f8f9fa !important;
+}
+
+.navbar-brand {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+    .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .navbar-collapse {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        letter-spacing: 2px;
+    }
+
+    .nav-item {
+        background-color: #272626;
+        padding: 30px;
+        margin-right: -1px;
+    }
+
+    .nav-link {
+        color: white !important;
+        font-weight: 300 !important;
+        display: block;
+        padding: 0.5rem 1rem;
+        text-transform: uppercase;
+    }
+}

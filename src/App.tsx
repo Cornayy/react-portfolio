@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.css';
-import { Hello } from '../src/components/Hello';
+import './styles/App.css';
+import './styles/General.scss';
+import { FrontSection } from '../src/components/FrontSection';
+import { NavigationBar } from './components/NavigationBar';
 
 export const App: React.FC = () => {
     return (
         <div className="App">
-            <Hello text="Hello World" />
+            <NavigationBar />
+            <FrontSection />
         </div>
     );
 };
