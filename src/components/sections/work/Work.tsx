@@ -2,10 +2,11 @@ import './style.scss';
 import React, { useState, useEffect } from 'react';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Spinner from 'react-bootstrap/Spinner';
+import { IProject } from '../../../types';
 
 export const Work: React.FC = () => {
     const [loading, setLoading] = useState<boolean>(true);
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState<IProject[]>([]);
 
     useEffect(() => {
         fetch('https://api.github.com/users/cornayy/repos')
