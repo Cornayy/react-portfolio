@@ -1,3 +1,3 @@
-# react-typescript-boilerplate
+# react-portfolio
 
-A boilerplate that gets you started with typed React quickly.
+My original portfolio remade in React using TypeScript.
