@@ -1,4 +1,4 @@
-import '../styles/NavigationBar.scss';
+import './style.scss';
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -11,10 +11,10 @@ export const NavigationBar: React.FC = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <li className="nav-item">
-                        <Nav.Link href="#home">About Me</Nav.Link>
+                        <Nav.Link href="#home">ABOUT ME</Nav.Link>
                     </li>
                     <li className="nav-item">
-                        <Nav.Link href="#link">My Work</Nav.Link>
+                        <Nav.Link href="#link">MY WORK</Nav.Link>
                     </li>
                 </Nav>
             </Navbar.Collapse>

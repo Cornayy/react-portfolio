@@ -1,0 +1,20 @@
+.intro {
+    background-image: -webkit-linear-gradient(0deg, #272626 50%, #f8f9fa 50%);
+    height: 90vh;
+}
+
+.intro-name:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 20px;
+    border-bottom: 4px solid #a5b0da;
+}
+
+@media (min-device-width: 1025px) {
+    .intro-left,
+    .intro-right {
+        font-size: 34px;
+    }
+}
