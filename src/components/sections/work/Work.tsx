@@ -2,19 +2,20 @@ import './style.scss';
 import React, { useState, useEffect } from 'react';
 import CardColumns from 'react-bootstrap/CardColumns';
 import Spinner from 'react-bootstrap/Spinner';
-import { IProject } from '../../../types';
+import { IRepository } from '../../../types';
 import { Repository } from '../../repository/Repository';
 
 export const Work: React.FC = () => {
     const [loading, setLoading] = useState<boolean>(true);
-    const [projects, setProjects] = useState<IProject[]>([]);
+    const [projects, setProjects] = useState<IRepository[]>([]);
 
-    const getConverted = (data: IProject[]): IProject[] => {
-        return data.map(project => {
+    const getConverted = (data: any): IRepository[] => {
+        return data.slice(0, 6).map((project: any) => {
             return {
                 name: project.name,
                 language: project.language,
                 description: project.description,
+                url: project.html_url,
             };
         });
     };
@@ -35,27 +36,27 @@ export const Work: React.FC = () => {
         };
 
         fetchProjects();
-    // tslint:disable-next-line: align
+        // tslint:disable-next-line: align
     }, []);
 
     return (
-        <div className="container-fluid work text-center">
-            <h1 className="pt-5">My Work</h1>
-            <hr />
-            <p className="pb-5">Check Out My Projects On GitHub!</p>
-            {loading ? (
-                <Spinner animation="border" role="status">
-                    <span className="sr-only">Loading...</span>
-                </Spinner>
-            ) : (
-                <div className="projects">
+        <section className="work-section" id="my-work-section">
+            <div className="container-fluid work text-center pb-5">
+                <h1 className="pt-5">My Work</h1>
+                <hr />
+                <p className="pb-5">Check Out My Projects On GitHub!</p>
+                {loading ? (
+                    <Spinner animation="border" role="status">
+                        <span className="sr-only">Loading...</span>
+                    </Spinner>
+                ) : (
                     <CardColumns>
                         {projects.map(project => (
-                            <Repository key={project.name} project={project} />
+                            <Repository key={project.name} repository={project} />
                         ))}
                     </CardColumns>
-                </div>
-            )}
-        </div>
+                )}
+            </div>
+        </section>
     );
 };

@@ -1,26 +1,28 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import { IProject } from '../../types';
+import { IRepository } from '../../types';
 
 interface IProps {
-    project: IProject;
+    repository: IRepository;
 }
 
-export const Repository: React.FC<IProps> = ({ project }) => {
+export const Repository: React.FC<IProps> = ({ repository }) => {
     return (
-        <Card style={{ width: '35rem' }}>
+        <Card onClick={() => handleClick(repository.url)}>
             <Card.Img
                 style={{ height: '20rem' }}
                 variant="top"
-                src={`/images/${project.language}.png`}
+                src={`/images/${repository.language}.png`}
             />
             <Card.Body style={{ height: '15rem' }}>
-                <Card.Title>{project.name}</Card.Title>
-                <Card.Text>{project.description}</Card.Text>
+                <Card.Title>{repository.name}</Card.Title>
+                <Card.Text>{repository.description}</Card.Text>
             </Card.Body>
             <Card.Footer>
-                <small className="text-muted">{project.language}</small>
+                <small className="text-muted">{repository.language}</small>
             </Card.Footer>
         </Card>
     );
 };
+
+const handleClick = (location: string) => (window.location.href = location);
