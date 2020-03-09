@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { IRepository } from '../../types';
+import placeholder from '../../../public/images/placeholder.png';
 
 interface IProps {
     repository: IRepository;
@@ -9,11 +10,7 @@ interface IProps {
 export const Repository: React.FC<IProps> = ({ repository }) => {
     return (
         <Card onClick={() => handleClick(repository.url)}>
-            <Card.Img
-                style={{ height: '20rem' }}
-                variant="top"
-                src={`/images/${repository.language.toLowerCase()}.png`}
-            />
+            <Card.Img style={{ height: '20rem' }} variant="top" src={placeholder} />
             <Card.Body style={{ height: '15rem' }}>
                 <Card.Title>{repository.name}</Card.Title>
                 <Card.Text>{repository.description}</Card.Text>
