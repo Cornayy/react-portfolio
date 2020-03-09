@@ -12,7 +12,7 @@ export const Repository: React.FC<IProps> = ({ repository }) => {
             <Card.Img
                 style={{ height: '20rem' }}
                 variant="top"
-                src={`react-portfolio/images/${repository.language.toLowerCase()}.png`}
+                src={`/images/${repository.language.toLowerCase()}.png`}
             />
             <Card.Body style={{ height: '15rem' }}>
                 <Card.Title>{repository.name}</Card.Title>
