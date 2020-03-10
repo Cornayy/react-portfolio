@@ -1,10 +1,10 @@
 import './style.scss';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faDiscord, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-export const Footer: React.FC = () => {
+export const Footer: FunctionComponent = () => {
     return (
         <footer className="page-footer font-small">
             <div className="container-fluid light-dark">

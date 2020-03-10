@@ -1,7 +1,7 @@
 import './style.scss';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-export const About: React.FC = () => {
+export const About: FunctionComponent = () => {
     return (
         <section className="about-section" id="about-me-section">
             <div className="container-fluid about-me text-center">

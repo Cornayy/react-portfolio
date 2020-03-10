@@ -1,7 +1,7 @@
 import './style.scss';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-export const FrontSection: React.FC = () => {
+export const FrontSection: FunctionComponent = () => {
     return (
         <section className="intro d-flex align-items-center">
             <div className="container text-center text-white left-side">

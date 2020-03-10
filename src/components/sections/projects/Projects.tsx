@@ -1,9 +1,9 @@
 import './style.scss';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Project } from '../../project/Project';
 import { projects } from '../../../projects';
 
-export const Projects: React.FC = () => {
+export const Projects: FunctionComponent = () => {
     return (
         <section className="projects-section">
             <div className="container-fluid projects text-center">

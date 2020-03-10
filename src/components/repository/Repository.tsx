@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Card from 'react-bootstrap/Card';
 import { IRepository } from '../../types';
-import placeholder from '../../../public/images/placeholder.png';
+import placeholder from '../../static/placeholder.png';
 
 interface IProps {
     repository: IRepository;
 }
 
-export const Repository: React.FC<IProps> = ({ repository }) => {
+export const Repository: FunctionComponent<IProps> = ({ repository }) => {
     return (
         <Card onClick={() => handleClick(repository.url)}>
             <Card.Img style={{ height: '20rem' }} variant="top" src={placeholder} />

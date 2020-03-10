@@ -1,9 +1,9 @@
 import './style.scss';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-export const Navigation: React.FC = () => {
+export const Navigation: FunctionComponent = () => {
     return (
         <Navbar variant="light" expand="lg">
             <Navbar.Brand href="#home">Corné Eggebeen</Navbar.Brand>

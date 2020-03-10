@@ -1,11 +1,11 @@
 import './style.scss';
-import React, { useState, useEffect } from 'react';
 import CardColumns from 'react-bootstrap/CardColumns';
 import Spinner from 'react-bootstrap/Spinner';
+import React, { useState, useEffect, FunctionComponent } from 'react';
 import { IRepository } from '../../../types';
 import { Repository } from '../../repository/Repository';
 
-export const Work: React.FC = () => {
+export const Work: FunctionComponent = () => {
     const [loading, setLoading] = useState<boolean>(true);
     const [projects, setProjects] = useState<IRepository[]>([]);
 
@@ -30,13 +30,11 @@ export const Work: React.FC = () => {
                 setProjects(converted);
                 setLoading(false);
             } catch (err) {
-                // tslint:disable-next-line: no-console
                 console.log(`Github data could not be retrieved, error: ${err}.`);
             }
         };
 
         fetchProjects();
-        // tslint:disable-next-line: align
     }, []);
 
     return (
