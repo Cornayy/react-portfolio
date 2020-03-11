@@ -2,7 +2,7 @@ import './style.scss';
 import React, { FunctionComponent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faDiscord, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export const Footer: FunctionComponent = () => {
     return (
@@ -18,17 +18,6 @@ export const Footer: FunctionComponent = () => {
                                 <FontAwesomeIcon
                                     title="GitHub"
                                     icon={faGithub}
-                                    size="2x"
-                                    style={{ color: 'white' }}
-                                />
-                            </a>
-                            <a
-                                className="contact-icon mr-md-5 mr-3"
-                                href="https://discord.gg/D3MPafc"
-                            >
-                                <FontAwesomeIcon
-                                    title="Discord"
-                                    icon={faDiscord}
                                     size="2x"
                                     style={{ color: 'white' }}
                                 />
