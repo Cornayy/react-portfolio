@@ -3,14 +3,10 @@
 $app-font: 'Nunito', sans-serif;
 $font-size: 22px;
 
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
 html,
 body {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 ::-webkit-scrollbar {

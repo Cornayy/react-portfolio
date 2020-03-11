@@ -1,6 +1,7 @@
 .intro {
     background-image: -webkit-linear-gradient(0deg, #272626 50%, #f8f9fa 50%);
     height: 90vh;
+    width: 100%;
 }
 
 .intro-name:after {
@@ -10,6 +11,16 @@
     width: 40%;
     padding-top: 20px;
     border-bottom: 4px solid #a5b0da;
+}
+
+@media (max-width: 480px) {
+    .intro-left {
+        font-size: 30px;
+    }
+
+    .intro-right {
+        font-size: 20px;
+    }
 }
 
 @media (min-device-width: 1025px) {
