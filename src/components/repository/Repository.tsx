@@ -9,7 +9,7 @@ interface IProps {
 
 export const Repository: FunctionComponent<IProps> = ({ repository }) => {
     return (
-        <Card className="mb-4" onClick={() => handleClick(repository.url)}>
+        <Card className="mb-5" onClick={() => handleClick(repository.url)}>
             <Card.Img style={{ height: '15rem' }} variant="top" src={placeholder} />
             <Card.Body style={{ height: '10rem' }}>
                 <Card.Title>{repository.name}</Card.Title>
