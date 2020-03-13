@@ -3,7 +3,7 @@ import React, { FunctionComponent } from 'react';
 
 export const About: FunctionComponent = () => {
     return (
-        <section className="about-section" id="about-me-section">
+        <section className="about-section" id="about">
             <div className="container-fluid about-me text-center">
                 <h1 className="pt-5">About Me</h1>
                 <hr />

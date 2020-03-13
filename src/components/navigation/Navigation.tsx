@@ -11,10 +11,10 @@ export const Navigation: FunctionComponent = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <li className="nav-item">
-                        <Nav.Link href="#about-me-section">ABOUT ME</Nav.Link>
+                        <Nav.Link href="#about">ABOUT ME</Nav.Link>
                     </li>
                     <li className="nav-item">
-                        <Nav.Link href="#my-work-section">MY WORK</Nav.Link>
+                        <Nav.Link href="#work">MY WORK</Nav.Link>
                     </li>
                 </Nav>
             </Navbar.Collapse>
