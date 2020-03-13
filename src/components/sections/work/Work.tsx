@@ -42,7 +42,7 @@ export const Work: FunctionComponent = () => {
             <div className="container-fluid work text-center pb-5">
                 <h1 className="pt-5">My Work</h1>
                 <hr />
-                <p className="pb-5">Check Out My Projects On GitHub!</p>
+                <p className="pb-5">Check out the projects I have done on GitHub!</p>
                 {loading ? (
                     <Spinner animation="border" role="status">
                         <span className="sr-only">Loading...</span>

@@ -11,7 +11,7 @@ export const About: FunctionComponent = () => {
                     I am Corné Eggebeen, currently studying Informatics / Software Engineering at
                     Avans University of Applied Sciences.
                 </p>
-                <p>Have a look at my work and contact me if you're interested.</p>
+                <p>Have a look at my work and contact me if you are interested.</p>
             </div>
         </section>
     );
