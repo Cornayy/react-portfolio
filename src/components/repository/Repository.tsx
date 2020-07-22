@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
-import Card from 'react-bootstrap/Card';
 import { IRepository } from '../../types';
+import Card from 'react-bootstrap/Card';
 import placeholder from '../../static/placeholder.png';
 
 interface IProps {

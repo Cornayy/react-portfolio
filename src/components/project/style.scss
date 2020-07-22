@@ -5,6 +5,11 @@
         -webkit-transform 0.15s ease 0s;
 }
 
+.card-img {
+    height: 300px;
+    width: 800px;
+}
+
 .card:hover {
     -webkit-transform: scale(1.01);
     -ms-transform: scale(1.01);

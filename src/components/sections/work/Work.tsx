@@ -9,23 +9,19 @@ export const Work: FunctionComponent = () => {
     const [loading, setLoading] = useState<boolean>(true);
     const [projects, setProjects] = useState<IRepository[]>([]);
 
-    const getConverted = (data: any): IRepository[] => {
-        return data.slice(0, 6).map((project: any) => {
-            return {
-                name: project.name,
-                language: project.language,
-                description: project.description,
-                url: project.html_url,
-            };
-        });
-    };
-
     useEffect(() => {
-        const fetchProjects = async (): Promise<void> => {
+        const fetchProjects = async () => {
             try {
                 const response = await fetch('https://api.github.com/users/cornayy/repos');
                 const data = await response.json();
-                const converted = getConverted(data);
+                const converted = data.slice(0, 6).map((project: any) => {
+                    return {
+                        name: project.name,
+                        language: project.language,
+                        description: project.description,
+                        url: project.html_url,
+                    };
+                });
 
                 setProjects(converted);
                 setLoading(false);
@@ -48,7 +44,7 @@ export const Work: FunctionComponent = () => {
                         <span className="sr-only">Loading...</span>
                     </Spinner>
                 ) : (
-                    <CardColumns>
+                    <CardColumns style={{ padding: '100px' }}>
                         {projects.map(project => (
                             <Repository key={project.name} repository={project} />
                         ))}

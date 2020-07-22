@@ -9,7 +9,7 @@ interface IProps {
 
 export const Project: FunctionComponent<IProps> = ({ project }) => {
     return (
-        <Card onClick={() => handleClick(project.url)} style={{ width: '50rem', margin: '2rem' }}>
+        <Card onClick={() => handleClick(project.url)} style={{ margin: '2rem' }}>
             <Card.Img src={project.image} />
             <Card.Footer
                 style={{
@@ -18,7 +18,7 @@ export const Project: FunctionComponent<IProps> = ({ project }) => {
                     border: 'none',
                 }}
             >
-                <p>{project.name}</p>
+                <summary>{project.name}</summary>
             </Card.Footer>
         </Card>
     );
