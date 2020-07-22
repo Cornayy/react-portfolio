@@ -4,4 +4,4 @@ My original portfolio remade in React using TypeScript.
 
 ## TODO
 
-[ ] Mobile friendly
+-   [ ] Mobile friendly
