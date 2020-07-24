@@ -4,11 +4,17 @@
     width: 100%;
 }
 
+.intro-name,
+.intro-right {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 .intro-name:after {
     content: '';
     display: block;
     margin: 0 auto;
-    width: 40%;
+    width: 20%;
     padding-top: 20px;
     border-bottom: 4px solid #a5b0da;
 }

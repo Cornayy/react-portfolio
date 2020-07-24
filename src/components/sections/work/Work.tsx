@@ -36,7 +36,7 @@ export const Work: FunctionComponent = () => {
     return (
         <section className="work-section" id="work">
             <div className="container-fluid work text-center pb-5">
-                <h1 className="pt-5">My Work</h1>
+                <h1 className="pt-5">Work</h1>
                 <hr />
                 <p className="pb-5">Check out the projects I have done on GitHub!</p>
                 {loading ? (

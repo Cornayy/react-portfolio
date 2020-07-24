@@ -1,8 +1,8 @@
 import './style.scss';
 import React, { FunctionComponent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 export const Footer: FunctionComponent = () => {
     return (
@@ -28,19 +28,19 @@ export const Footer: FunctionComponent = () => {
                         <a className="contact-icon" href="mailto:corneeggebeen@outlook.com">
                             <FontAwesomeIcon
                                 title="Mail"
-                                icon={faMailBulk}
+                                icon={faEnvelope}
                                 size="2x"
                                 style={{ color: 'white' }}
                             />
                         </a>
                         <a
-                            className="contact-icon "
+                            className="contact-icon"
                             href="https://www.linkedin.com/in/corn%C3%A9-eggebeen-970058146/"
                             title="LinkedIn"
                         >
                             <FontAwesomeIcon
                                 title="LinkedIn"
-                                icon={faLinkedin}
+                                icon={faLinkedinIn}
                                 size="2x"
                                 style={{ color: 'white' }}
                             />
