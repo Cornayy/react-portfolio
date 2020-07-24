@@ -8,7 +8,6 @@
 .intro-right {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 600;
 }
 
 .intro-name:after {
@@ -22,11 +21,11 @@
 
 @media (max-width: 480px) {
     .intro-left {
-        font-size: 30px;
+        font-size: 22px;
     }
 
     .intro-right {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
