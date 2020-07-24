@@ -4,3 +4,10 @@
     height: 500px;
     color: whitesmoke;
 }
+
+.about-text {
+    @media screen and (min-width: 1200px) {
+        padding: 55px;
+        width: 50%;
+    }
+}

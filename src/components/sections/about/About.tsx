@@ -7,7 +7,7 @@ export const About: FunctionComponent = () => {
             <div className="container-fluid about-me text-center">
                 <h1 className="pt-5">About</h1>
                 <hr />
-                <div className="p-5 w-50 mx-auto">
+                <div className="about-text mx-auto">
                     <p>
                         I'm Corné, currently studying Informatics and majoring in Software
                         Engineering at Avans University of Applied Sciences. Interested in the
