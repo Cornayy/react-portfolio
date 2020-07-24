@@ -8,6 +8,10 @@
 .card-img {
     height: 300px;
     width: 800px;
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
 }
 
 .card:hover {

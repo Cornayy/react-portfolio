@@ -44,7 +44,7 @@ export const Work: FunctionComponent = () => {
                         <span className="sr-only">Loading...</span>
                     </Spinner>
                 ) : (
-                    <CardColumns style={{ padding: '100px' }}>
+                    <CardColumns>
                         {projects.map(project => (
                             <Repository key={project.name} repository={project} />
                         ))}
