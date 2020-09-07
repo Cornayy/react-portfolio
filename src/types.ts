@@ -9,4 +9,5 @@ export interface IProject {
     url: string;
     name: string;
     image: string;
+    description: string;
 }

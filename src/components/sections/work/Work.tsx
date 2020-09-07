@@ -4,6 +4,8 @@ import Spinner from 'react-bootstrap/Spinner';
 import React, { useState, useEffect, FunctionComponent } from 'react';
 import { IRepository } from '../../../types';
 import { Repository } from '../../repository/Repository';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
 export const Work: FunctionComponent = () => {
     const [loading, setLoading] = useState<boolean>(true);
@@ -36,9 +38,16 @@ export const Work: FunctionComponent = () => {
     return (
         <section className="work-section" id="work">
             <div className="container-fluid work text-center pb-5">
-                <h1 className="pt-5">Work</h1>
+                <FontAwesomeIcon
+                    className="inline mr-3"
+                    title="Projects"
+                    icon={faBriefcase}
+                    size="2x"
+                    style={{ color: 'black' }}
+                />
+                <h1 className="pt-5 inline">Work</h1>
                 <hr />
-                <p className="pb-5">Check out the projects I have done on GitHub!</p>
+                <p className="pb-2">Check out the projects I have done on GitHub!</p>
                 {loading ? (
                     <Spinner animation="border" role="status">
                         <span className="sr-only">Loading...</span>

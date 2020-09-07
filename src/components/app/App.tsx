@@ -14,8 +14,8 @@ export const App: FunctionComponent = () => {
             <Navigation />
             <FrontSection />
             <About />
-            <Work />
             <Projects />
+            <Work />
             <Footer />
         </div>
     );

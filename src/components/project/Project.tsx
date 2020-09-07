@@ -1,7 +1,8 @@
 import './style.scss';
 import React, { FunctionComponent } from 'react';
-import Card from 'react-bootstrap/Card';
 import { IProject } from '../../types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 
 interface IProps {
     project: IProject;
@@ -9,18 +10,24 @@ interface IProps {
 
 export const Project: FunctionComponent<IProps> = ({ project }) => {
     return (
-        <Card onClick={() => handleClick(project.url)} style={{ margin: '2rem' }}>
-            <Card.Img src={project.image} />
-            <Card.Footer
-                style={{
-                    background: 'rgba(39, 38, 38, 0.91)',
-                    color: 'whitesmoke',
-                    border: 'none',
-                }}
+        <div className="project-item col-md-12 mb-5">
+            <FontAwesomeIcon
+                className="inline mr-3"
+                title="Projects"
+                icon={faLongArrowAltRight}
+                size="2x"
+                style={{ color: 'black' }}
+            />
+            <h3
+                className="inline project-title"
+                onClick={() => handleClick(project.url)}
+                style={{ margin: '2rem' }}
             >
-                <summary>{project.name}</summary>
-            </Card.Footer>
-        </Card>
+                {project.name}
+            </h3>
+            <p className="project-description">{project.description}</p>
+            <hr className="project-end" />
+        </div>
     );
 };
 

@@ -1,22 +1,20 @@
-.card {
-    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em, rgba(2, 8, 20, 0.08) 0px 0.085em 0.175em;
-    border-radius: 4px;
-    transition: box-shadow 0.15s ease 0s, transform 0.15s ease 0s, -webkit-box-shadow 0.15s ease 0s,
-        -webkit-transform 0.15s ease 0s;
+.project-description {
+	font-size: 18px;
+	color: grey;
 }
 
-.card-img {
-    height: 300px;
-    width: 800px;
-
-    @media screen and (max-width: 1200px) {
-        width: 100%;
-    }
+.inline {
+	display: inline-block;
 }
 
-.card:hover {
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    transform: scale(1.01);
-    cursor: pointer;
+.project-end {
+    width: 25%;
+    border: 0;
+    border-top: 1px solid lightgray;
+    margin: 2.5em auto 2.3em;
+}
+
+.project-title:hover {
+	color: grey;
+	cursor: pointer;
 }
