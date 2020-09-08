@@ -1,3 +1,9 @@
+export enum MasteryType {
+    LOW,
+    MEDIUM,
+    HIGH,
+}
+
 export interface IRepository {
     name: string;
     description: string;
@@ -10,4 +16,9 @@ export interface IProject {
     name: string;
     image: string;
     description: string;
+}
+
+export interface ISkill {
+    name: string;
+    mastery: MasteryType;
 }
