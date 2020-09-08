@@ -6,6 +6,7 @@ import { Navigation } from '../navigation/Navigation';
 import { About } from '../sections/about/About';
 import { Work } from '../sections/work/Work';
 import { Projects } from '../sections/projects/Projects';
+import { Skills } from '../sections/skills/Skills';
 import { Footer } from '../footer/Footer';
 
 export const App: FunctionComponent = () => {
@@ -14,6 +15,7 @@ export const App: FunctionComponent = () => {
             <Navigation />
             <FrontSection />
             <About />
+            <Skills />
             <Projects />
             <Work />
             <Footer />

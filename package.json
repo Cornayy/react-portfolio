@@ -2,7 +2,6 @@
     "name": "react-typescript-boilerplate",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://cornayy.github.io/react-portfolio/",
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.27",
         "@fortawesome/free-brands-svg-icons": "^5.12.1",
@@ -30,8 +29,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+	"start:prod": "./server.sh"
     },
     "eslintConfig": {
         "extends": "react-app"
