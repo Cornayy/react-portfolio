@@ -20,8 +20,11 @@ export const Skills: FunctionComponent = () => {
                 />
                 <h1 className="pt-5 inline">Skills</h1>
                 <hr />
-                <Accordion className="text-center" defaultActiveKey="0">
-                    <Card className="mx-auto mb-5">
+                <Accordion
+                    className="skills-accordion container-fluid text-center"
+                    defaultActiveKey="0"
+                >
+                    <Card className="mb-5 accordion-card">
                         <Accordion.Toggle as={Card.Header} eventKey="0">
                             Very Comfortable
                         </Accordion.Toggle>
@@ -35,7 +38,7 @@ export const Skills: FunctionComponent = () => {
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
-                    <Card className="mx-auto mb-5">
+                    <Card className="mb-5 accordion-card">
                         <Accordion.Toggle as={Card.Header} eventKey="1">
                             Fairly Comfortable
                         </Accordion.Toggle>
@@ -49,7 +52,7 @@ export const Skills: FunctionComponent = () => {
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
-                    <Card className="mx-auto">
+                    <Card className="accordion-card">
                         <Accordion.Toggle as={Card.Header} eventKey="2">
                             Comfortable
                         </Accordion.Toggle>
